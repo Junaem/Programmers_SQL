@@ -1,0 +1,7 @@
+select I.ANIMAL_ID, I.NAME
+from ANIMAL_INS I join ANIMAL_OUTS O
+on I.ANIMAL_ID = O.ANIMAL_ID
+where I.DATETIME > O.DATETIME
+order by I.DATETIME
+
+-- 221207에 다시 풀어봄
